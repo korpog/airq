@@ -20,7 +20,7 @@ def split_datetime(dframe):
     dframe["utc"] = utc_list
     dframe["local"] = local_list
 
-wokalna = pd.read_csv("wokalna.csv")
+wokalna = pd.read_csv("csv/wokalna.csv")
 wokalna["city"] = "Warszawa"
 
 split_coordinates(wokalna)
@@ -32,4 +32,4 @@ wokalna["local"] = pd.to_datetime(wokalna["local"])
 cols=["isMobile", "isAnalysis", "entity", "sensorType", "date", "coordinates"]
 wokalna.drop(columns=cols, inplace=True, axis=1)
 
-wokalna.to_csv("wokalna_clean.csv")
+wokalna.to_csv("csv/wokalna_clean.csv")

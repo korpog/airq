@@ -10,7 +10,7 @@ api_call="https://api.openaq.org/v2/measurements?location_id=6386&parameter=o3&p
 res = requests.get(api_call, headers={"X-API-Key": API_KEY})
 results = res.json()['results']
 
-with open("wokalna.csv", "w") as f:
+with open("csv/wokalna.csv", "w") as f:
     w = csv.DictWriter(f, results[0].keys())
     w.writeheader()
     w.writerows(results)
