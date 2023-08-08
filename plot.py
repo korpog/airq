@@ -33,7 +33,7 @@ def hourly_mean():
     ax.plot(o3_hour, '-g', label=r'$O_3$', linewidth=1)
     ax.plot(pm25_hour, '-m',  label=r'$PM2.5$', linewidth=1)
     ax.legend()
-    fig.savefig("hourly_mean.png")
+    fig.savefig("img/hourly_mean.png")
 
 
 def daily_mean():
@@ -47,7 +47,7 @@ def daily_mean():
     ax.plot(pm25_day.index, pm25_day['daily'],
             '-m',  label=r'$PM2.5$', linewidth=1)
     ax.legend()
-    fig.savefig("daily_mean.png")
+    fig.savefig("img/daily_mean.png")
 
 
 def daily_mean_std():
@@ -67,7 +67,7 @@ def daily_mean_std():
     ax2.errorbar(o3_day.index, o3_day['daily'], yerr=o3_day['std'],
                  mfc='blue', fmt='o', label=r'$O_3$', capsize=3)
 
-    fig.savefig("daily_mean_std.png")
+    fig.savefig("img/daily_mean_std.png")
 
 
 hourly_mean()
