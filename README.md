@@ -6,6 +6,7 @@ Measurements of $NO_2$, $O_3$ and $PM2.5$ are included.
 
 ## Plots:
 ### Hourly mean 
+Mean values for each hour of the day (e.g. 5 am on July 1, July 2 ... July 31)
 ![alt text](https://github.com/korpog/airq/blob/main/img/hourly_mean.png "Hourly Mean")
 
 ### Daily mean 
