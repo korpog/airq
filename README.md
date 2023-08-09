@@ -15,3 +15,5 @@ Mean values for each hour of the day (e.g. 5 am on July 1, July 2 ... July 31)
 ### Daily mean for $NO_2$ and $O_3$ with standard deviation 
 ![alt text](https://github.com/korpog/airq/blob/main/img/daily_mean_std.png "Daily Mean + STD")
 
+### Minimum and maximum for each day
+![alt text](https://github.com/korpog/airq/blob/main/img/daily_minmax.png "Daily MinMax")
